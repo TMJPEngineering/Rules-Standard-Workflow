@@ -44,6 +44,10 @@
   </tbody>
 </table>
 
+## Branch Hierarchy
+
+![Branch Hierarchy](https://cloud.githubusercontent.com/assets/21231662/23155841/3734819c-f84f-11e6-888f-e25b550e38ab.png)
+
 ## Credits
 
 [digitaljhelms](https://gist.github.com/digitaljhelms/4287848)
