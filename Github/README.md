@@ -29,27 +29,27 @@ List of TMJP Engineering rules &amp; standard workflow in Github
     <tr>
       <td>Development</td>
       <td>dev</td>
-      <td>Accepts merges from *-branch</td>
+      <td>Accepts merges from Developer Stage</td>
     </tr>
     <tr>
       <td>Developer</td>
-      <td>*-branch</td>
+      <td>[name]-branch</td>
       <td>Accepts rebase and merge from features, issues, and hotfixes</td>
     </tr>
     <tr>
       <td>Issues</td>
-      <td>issue-*</td>
-      <td>Always branch off HEAD of developer stage</td>
+      <td>issue-[name]</td>
+      <td>Always branch off HEAD of Developer Stage</td>
     </tr>
     <tr>
       <td>Features</td>
-      <td>feature-*</td>
-      <td>Always branch off HEAD of developer stage</td>
+      <td>feature-[name]</td>
+      <td>Always branch off HEAD of Developer Stage</td>
     </tr>
     <tr>
       <td>Hotfixes</td>
-      <td>hotfix-*</td>
-      <td>Always branch off HEAD of developer stage</td>
+      <td>hotfix-[name]</td>
+      <td>Always branch off HEAD of Developer Stage</td>
     </tr>
   </tbody>
 </table>
@@ -59,14 +59,14 @@ List of TMJP Engineering rules &amp; standard workflow in Github
 ### Pull Requests
 
 - `master` branch *always* merge commit from `dev`
-- `dev` branch *always* merge commit from developer stage
-- In developer stage, *always* accept *rebase & merge* from issue, hotfix, and feature branches
+- `dev` branch *always* merge commit from Developer Stage
+- In Developer Stage, *always* accept *rebase & merge* from issue, hotfix, and feature branches
 
 ### Locally
 
-Always run `git pull` in developer stage, `dev` branch, and `master` branch if those branches aren't updated in local.
+Always run `git pull` in Developer Stage, `dev` branch, and `master` branch if those branches aren't updated in local.
 
-For creating branch from developer stage, run this command:
+For creating branch from Developer Stage, run this command:
 
 - `git checkout -b <new-branch> <source-branch>`
   - This will create and switch to a new branch from source branch
@@ -85,13 +85,13 @@ For the next push in your branch, *always* run this:
 git push origin <branch-name> -f
 ```
 
-If you're branch is outdated to `dev`, run this command from developer stage:
+If you're branch is outdated to `dev`, run this command from Developer Stage:
 
 ```
 git rebase dev 
 ```
 
-As well as the developer stage, if issue, hotfix or feature branches were outdated to the developer stage, run this command by example:
+As well as the Developer Stage, if issue, hotfix or feature branches were outdated to the Developer Stage, run this command by example:
 
 ```
 git rebase john-branch // Name of your branch
