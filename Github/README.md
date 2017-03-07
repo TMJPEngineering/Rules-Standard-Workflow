@@ -8,7 +8,7 @@ List of TMJP Engineering rules &amp; standard workflow in Github
 - [Git Workflow](https://github.com/TMJPEngineering/Standard-Workflow-Rules/tree/master/Github#git-workflow)
 - [Branch Hierarchy](https://github.com/TMJPEngineering/Standard-Workflow-Rules/tree/master/Github#branch-hierarchy)
 - [Credits](https://github.com/TMJPEngineering/Standard-Workflow-Rules/tree/master/Github#credits)
-- [License](https://github.com/TMJPEngineering/Standard-Workflow-Rules/tree/master/Github#license)
+- [LICENSE](https://github.com/TMJPEngineering/Standard-Workflow-Rules/tree/master/Github#license)
 
 ## Git Branch Conventions
 
@@ -64,9 +64,7 @@ List of TMJP Engineering rules &amp; standard workflow in Github
 
 ### Locally
 
-These are the commands you will use in terminal or git bash:
-
-Always run `git pull` in dev if that branch aren't updated in local. To say that you're dev wasn't up to date, check the *Network Graph* in Github.
+Always run `git pull` in developer stage, `dev` branch, and `master` branch if those branches aren't updated in local.
 
 For creating branch from developer stage, run this command:
 
@@ -75,13 +73,36 @@ For creating branch from developer stage, run this command:
     - Example: `git checkout -b hotfix-auth john-branch`
     - Example: `git checkout -b feature-message jam-branch`
 
-In case of conflicts, run this command:
+Every first push in your branch, *always* run this:
 
 ```
-git rebase dev
+git push origin <branch-name> -u
+```
+
+For the next push in your branch, *always* run this:
+
+```
+git push origin <branch-name> -f
+```
+
+If you're branch is outdated to `dev`, run this command from developer stage:
+
+```
+git rebase dev 
+```
+
+As well as the developer stage, if issue, hotfix or feature branches were outdated to the developer stage, run this command by example:
+
+```
+git rebase john-branch // Name of your branch
 ```
 
 Make sure that you run `git pull` in development stage. If not, your branch will not be fixed.
+
+After that, if there are conflicts, use the following commands below:
+
+- `git add .`
+- `git rebase --continue`
 
 ## Branch Hierarchy
 
