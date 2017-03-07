@@ -97,7 +97,7 @@ As well as the Developer Stage, if issue, hotfix or feature branches were outdat
 git rebase john-branch // Name of your branch
 ```
 
-Make sure that you run `git pull` in development stage. If not, your branch will not be fixed.
+Make sure that you run `git pull` in `dev` branch. If not, your branch will not be fixed.
 
 After that, if there are conflicts, use the following commands below:
 
