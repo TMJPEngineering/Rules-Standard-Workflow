@@ -72,8 +72,8 @@ For creating branch from developer stage, run this command:
 
 - `git checkout -b <new-branch> <source-branch>`
   - This will create and switch to a new branch from source branch
-  - Example: `git checkout -b hotfix-auth john-branch`
-  - Example: `git checkout -b feature-message jam-branch`
+    - Example: `git checkout -b hotfix-auth john-branch`
+    - Example: `git checkout -b feature-message jam-branch`
 
 In case of conflicts, run this command:
 
