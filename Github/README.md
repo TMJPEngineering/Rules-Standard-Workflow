@@ -34,22 +34,22 @@ List of TMJP Engineering rules &amp; standard workflow in Github
     <tr>
       <td>Developer</td>
       <td>*-branch</td>
-      <td>Accepts merges from features, issues, and hotfixes</td>
+      <td>Accepts rebase and merge from features, issues, and hotfixes</td>
     </tr>
     <tr>
       <td>Issues</td>
       <td>issue-*</td>
-      <td>Always branch off HEAD of *-branch</td>
+      <td>Always branch off HEAD of developer stage</td>
     </tr>
     <tr>
       <td>Features</td>
       <td>feature-*</td>
-      <td>Always branch off HEAD of *-branch</td>
+      <td>Always branch off HEAD of developer stage</td>
     </tr>
     <tr>
       <td>Hotfixes</td>
       <td>hotfix-*</td>
-      <td>Always branch off HEAD of *-branch</td>
+      <td>Always branch off HEAD of developer stage</td>
     </tr>
   </tbody>
 </table>
