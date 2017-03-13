@@ -29,27 +29,22 @@ List of TMJP Engineering rules &amp; standard workflow in Github
     <tr>
       <td>Development</td>
       <td>dev</td>
-      <td>Accepts merges from Developer Stage</td>
-    </tr>
-    <tr>
-      <td>Developer</td>
-      <td>[name]-branch</td>
-      <td>Accepts rebase and merge from features, issues, and hotfixes</td>
+      <td>Accepts rebase and merges from issue, feature, and hotfix branches/td>
     </tr>
     <tr>
       <td>Issues</td>
       <td>issue-[name]</td>
-      <td>Always branch off HEAD of Developer Stage</td>
+      <td>Always branch off HEAD of Development Stage</td>
     </tr>
     <tr>
       <td>Features</td>
       <td>feature-[name]</td>
-      <td>Always branch off HEAD of Developer Stage</td>
+      <td>Always branch off HEAD of Development Stage</td>
     </tr>
     <tr>
       <td>Hotfixes</td>
       <td>hotfix-[name]</td>
-      <td>Always branch off HEAD of Developer Stage</td>
+      <td>Always branch off HEAD of Development Stage</td>
     </tr>
   </tbody>
 </table>
@@ -59,19 +54,19 @@ List of TMJP Engineering rules &amp; standard workflow in Github
 ### Pull Requests
 
 - `master` branch *always* merge commit from `dev`
-- `dev` branch *always* merge commit from Developer Stage
-- In Developer Stage, *always* accept *rebase & merge* from issue, hotfix, and feature branches
+- `dev` branch *always* accept *rebase & merge* from issue, hotfix, and feature branches
 
 ### Locally
 
-Always run `git pull` in Developer Stage, `dev` branch, and `master` branch if those branches aren't updated in local.
+Always run `git pull` in `dev` branch if it isn't updated to local.
 
-For creating branch from Developer Stage, run this command:
+For creating branch from `dev`, run this command:
 
-- `git checkout -b <new-branch> <source-branch>`
-  - This will create and switch to a new branch from source branch
-    - Example: `git checkout -b hotfix-auth john-branch`
-    - Example: `git checkout -b feature-message jam-branch`
+- `git checkout -b <new-branch> dev`
+  - This will create and switch to a new branch from `dev`
+    - Example: `git checkout -b hotfix-auth dev`
+    - Example: `git checkout -b feature-message dev`
+    - Example: `git checkout -b issue-cors dev`
 
 Every first push in your branch, *always* run this:
 
@@ -79,22 +74,20 @@ Every first push in your branch, *always* run this:
 git push origin <branch-name> -u
 ```
 
+**Note:** The `-u` option automatically sets that upstream for you, linking your repo to a central one. That way, in the future, Git "knows" where you want to push to and where you want to pull from, so you can use `git pull` or `git push` without arguments.
+
 For the next push in your branch, *always* run this:
 
 ```
 git push origin <branch-name> -f
 ```
 
-If you're branch is outdated to `dev`, run this command from Developer Stage:
+**Note:** The `-f` option is short for `--force`
+
+If you're branch is outdated to `dev`, run this in your terminal:
 
 ```
 git rebase dev 
-```
-
-As well as the Developer Stage, if issue, hotfix or feature branches were outdated to the Developer Stage, run this command by example:
-
-```
-git rebase john-branch // Name of your branch
 ```
 
 Make sure that you run `git pull` in `dev` branch. If not, your branch will not be fixed.
@@ -102,11 +95,11 @@ Make sure that you run `git pull` in `dev` branch. If not, your branch will not 
 After that, if there are conflicts, use the following commands below:
 
 - `git add .`
-- `git rebase --continue`
+- `git rebase --continue` *// If only you have 2 or more conflicts to fix*
 
 ## Branch Hierarchy
 
-![Branch Hierarchy](https://cloud.githubusercontent.com/assets/21231662/23155841/3734819c-f84f-11e6-888f-e25b550e38ab.png)
+![Branch Hierarchy](https://cloud.githubusercontent.com/assets/21231662/23843177/e179dfda-07f4-11e7-8685-3f0b01b2ff96.png)
 
 ## Credits
 
@@ -116,4 +109,4 @@ After that, if there are conflicts, use the following commands below:
 
 This project is licensed under the MIT License - see the [LICENSE](https://github.com/TMJPEngineering/Standard-Workflow-Rules/blob/master/LICENSE) for details.
 
-Copyright (c) 2017 [TMJ]() Philippines
+Copyright (c) 2017 [TMJ](http://www.tmj.jp) Philippines
