@@ -29,7 +29,7 @@ List of TMJP Engineering rules &amp; standard workflow in Github
     <tr>
       <td>Development</td>
       <td>dev</td>
-      <td>Accepts rebase and merges from issue, feature, and hotfix branches/td>
+      <td>Accepts rebase and merges from issue, feature, and hotfix branches</td>
     </tr>
     <tr>
       <td>Issues</td>
