@@ -55,6 +55,7 @@ List of TMJP Engineering rules &amp; standard workflow in Github
 
 - `master` branch *always* merge commit from `dev`
 - `dev` branch *always* accept *rebase & merge* from issue, hotfix, and feature branches
+- **Always** assigned to yourself once you've created the pull request.
 
 ### Locally
 
