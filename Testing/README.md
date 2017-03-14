@@ -4,6 +4,12 @@ List of TMJP Engineering rules &amp; standard workflow in Testing
 
 ## Getting Started
 
-### Laravel
+## Local
 
-### TMJ Mean Stack
+**Laravel**
+
+**TMJ Mean Stack**
+
+## Github Pull Request
+
+We'll be using CI (Continuous Integration) like [Travis](https://travis-ci.org/) or [CircleCI](https://circleci.com/)
