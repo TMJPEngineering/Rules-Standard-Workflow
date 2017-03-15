@@ -20,8 +20,8 @@ An example of CI:
 
 **Travis CI**
 
-![image](https://cloud.githubusercontent.com/assets/21231662/23928409/7d28f072-095a-11e7-99c8-4a1160f59e19.png)
+<img src="https://cloud.githubusercontent.com/assets/21231662/23928409/7d28f072-095a-11e7-99c8-4a1160f59e19.png" alt="image" width="766">
 
 **Circle CI**
 
-![image](https://cloud.githubusercontent.com/assets/21231662/23893073/15f79e94-08d8-11e7-94f8-004be99a9590.png)
+<img src="https://cloud.githubusercontent.com/assets/21231662/23928532/32f30c80-095b-11e7-9b7b-25cf8a3c9f33.png" alt="image" width="766">
