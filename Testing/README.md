@@ -18,4 +18,10 @@ We'll be using CI (Continuous Integration) like [Travis](https://travis-ci.org/)
 
 An example of CI:
 
+**Travis CI**
+
+![image](https://cloud.githubusercontent.com/assets/21231662/23928409/7d28f072-095a-11e7-99c8-4a1160f59e19.png)
+
+**Circle CI**
+
 ![image](https://cloud.githubusercontent.com/assets/21231662/23893073/15f79e94-08d8-11e7-94f8-004be99a9590.png)
