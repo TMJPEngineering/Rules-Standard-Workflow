@@ -17,7 +17,7 @@ phpunit
 In **TMJ Mean Stack** or any javascript application, we'll be using `karma` and `jasmine` together. **Karma** is a test runner for javascript. **Jasmine** is an open source testing framework for javascript. To run a test, run this command:
 
 ```
-karma
+karma start
 ```
 
 ### Pull Request
